@@ -12,6 +12,7 @@
     <title>FuturInvest International</title>
   </head>
   <body>
+    <script defer src="./src/app.js"></script>
     <main>
       <section id="intro">
         <header>
@@ -38,7 +39,7 @@
               important companies in Central and Eastern Europe and later also
               in Asia
             </p>
-            <div class="middle-contact">
+            <div class="form middle-contact">
               <p>Contact us</p>
               <img src="./public/arrow-right-circle.svg" />
             </div>
@@ -132,7 +133,7 @@
           <div class="team-top">
             <div class="team-headsup">OUR TEAM</div>
             <h2>Meet our leaders</h2>
-            <p>We all have experinece in various filed and want to use it to our mutual benefit</p>
+            <p>We all have experinece in various fields and want to use it to our mutual benefit</p>
           </div>
           <div class="team-bottom">
             <div class="card">
@@ -169,12 +170,34 @@
             <p>There is nothing easier. Write us or call us on +421 555 555</p>
           </div>
           <div class='footer-top-contact'>
-            <div>Contact us</div>
+            <div class="form">Contact us</div>
           </div>
         </div>
         <div class="footer-bottom">FuturInvest International SE &copy; 2022</div>
       </div>
       </footer>
     </main>
+    <section id="contact-form">
+      <form action="https://formsubmit.co/tamas.parkany@futurinvest.email" method="POST">
+        <div class="form-header">
+          <p>Write us a message</p>
+        </div>
+          <div class="form-inputs">
+            <div>
+              <label for="email">E-mail</label><br>
+              <input type="email" id='email' name="email" required>
+            </div>
+            <div>
+              <label for="text">Message</label><br>
+              <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </div>
+          <button type="submit">Send message</button>
+          <input type="hidden" name="_subject" value="New message received through website!">
+          <input type="hidden" name="_next" value="https://futurinvest.international/index.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+       </div>
+      </form>
+    </section>
   </body>
 </html>

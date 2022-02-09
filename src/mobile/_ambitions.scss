@@ -17,10 +17,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: visible;
     .ambitions-left {
       width: 320px;
       height: 600px;
       position: relative;
+      margin-right: 0;
+      overflow: visible;
       img {
         width: 320px;
         position: absolute;

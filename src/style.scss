@@ -17,6 +17,25 @@ a {
   padding: 10px;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(244, 247, 255, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(39, 45, 62, 0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #272d3e;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
 @import "../src/mobile/intro";
 @import "../src/mobile/innovations";
 @import "../src/mobile/plans";
@@ -41,4 +60,5 @@ a {
   }
 
   @import "../src/desktop/footer";
+  @import "../src/desktop/contact";
 }
