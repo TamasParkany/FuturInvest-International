@@ -366,11 +366,11 @@ header .top-contact .hamburger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: visible;
 }
 
 .ambitions-team-container #ambitions {
   width: 320px;
-  height: 600px;
   margin: 200px auto;
   position: absolute;
   display: -webkit-box;
@@ -389,17 +389,16 @@ header .top-contact .hamburger {
 }
 
 .ambitions-team-container #ambitions .ambitions-left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 575px;
-          flex: 0 0 575px;
-  margin-right: 15px;
+  width: 320px;
+  height: 600px;
+  position: relative;
 }
 
 .ambitions-team-container #ambitions .ambitions-left img {
-  width: 253px;
+  width: 320px;
   position: absolute;
-  left: 71px;
-  bottom: -15px;
+  left: 5px;
+  bottom: 200px;
 }
 
 .ambitions-team-container #ambitions .ambitions-left .ambitions-counter {
@@ -433,6 +432,7 @@ header .top-contact .hamburger {
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
+  text-align: center;
 }
 
 .ambitions-team-container #ambitions .ambitions-left .ambitions-counter .ambitions-counter-text {
@@ -440,6 +440,7 @@ header .top-contact .hamburger {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 23px;
 }
 
 .ambitions-team-container #ambitions .ambitions-left .ambitions-counter .projects {
@@ -511,7 +512,7 @@ header .top-contact .hamburger {
   background-size: cover;
   position: absolute;
   left: 0px;
-  bottom: 127.5px;
+  bottom: -900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,7 +522,6 @@ header .top-contact .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 500px;
 }
 
 .ambitions-team-container #team .team-container {
@@ -572,7 +572,7 @@ header .top-contact .hamburger {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  width: 577px;
+  width: 256px;
   text-align: center;
   margin-top: 20px;
 }
@@ -581,16 +581,23 @@ header .top-contact .hamburger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
 }
 
 .ambitions-team-container #team .team-container .team-bottom .card {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 373px;
-          flex: 0 0 373px;
+      -ms-flex: 0 0 261px;
+          flex: 0 0 261px;
   background-color: white;
   border-radius: 10px;
-  height: 323px;
+  width: 301px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,24 +628,25 @@ header .top-contact .hamburger {
   font-size: 32px;
   line-height: 42px;
   color: #001533;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 
 .ambitions-team-container #team .team-container .team-bottom .card .card-info {
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #001533;
-  width: 280px;
+  width: 242px;
 }
 
 .ambitions-team-container #team .team-container .team-bottom .card-middle {
-  margin: 0 30px;
+  margin: 42px 0;
 }
 
 .whitespace {
-  height: 20vh;
+  height: 175vh;
 }
 
 footer {
@@ -660,7 +668,6 @@ footer {
 }
 
 footer .footer-container {
-  width: 1180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,17 +684,21 @@ footer .footer-container .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 188px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: none;
 }
 
 footer .footer-container .footer-top .footer-top-info {
-  width: 575px;
+  width: 320px;
 }
 
 footer .footer-container .footer-top .footer-top-info h3 {
@@ -708,10 +719,13 @@ footer .footer-container .footer-top .footer-top-info p {
 }
 
 footer .footer-container .footer-top .footer-top-contact {
-  width: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1108,7 +1122,6 @@ footer .footer-container .footer-bottom {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 575px;
             flex: 0 0 575px;
-    margin-right: 15px;
   }
   .ambitions-team-container #ambitions .ambitions-left img {
     width: 503px;
@@ -1277,6 +1290,10 @@ footer .footer-container .footer-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-top: 80px;
   }
   .ambitions-team-container #team .team-container .team-bottom .card {
@@ -1317,6 +1334,7 @@ footer .footer-container .footer-bottom {
     margin-bottom: 30px;
   }
   .ambitions-team-container #team .team-container .team-bottom .card .card-info {
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1364,6 +1382,10 @@ footer .footer-container .footer-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1395,6 +1417,10 @@ footer .footer-container .footer-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;

@@ -19,7 +19,6 @@
     align-items: center;
     .ambitions-left {
       flex: 0 0 575px;
-      margin-right: 15px;
       img {
         width: 503px;
         position: absolute;
@@ -159,6 +158,7 @@
       }
       .team-bottom {
         display: flex;
+        flex-direction: row;
         margin-top: 80px;
         .card {
           flex: 0 0 373px;
@@ -186,6 +186,7 @@
             margin-bottom: 30px;
           }
           .card-info {
+            font-family: "Source Sans Pro", sans-serif;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
