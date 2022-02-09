@@ -16,13 +16,17 @@ a {
   padding: 10px;
 }
 
-@import "intro";
-@import "innovations";
-@import "plans";
-@import "ambitions";
+@import "../src/mobile/intro";
 
-.whitespace {
-  height: 20vh;
+@media screen and (min-width: 1180px) {
+  @import "../src/desktop/intro";
+  @import "../src/desktop/innovations";
+  @import "../src/desktop/plans";
+  @import "../src/desktop/ambitions";
+
+  .whitespace {
+    height: 20vh;
+  }
+
+  @import "../src/desktop/footer";
 }
-
-@import "footer";

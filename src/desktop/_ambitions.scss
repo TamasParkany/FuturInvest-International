@@ -106,7 +106,7 @@
   #team {
     aspect-ratio: 1440/1002;
     width: 100%;
-    background-image: url("../public/team_bg.png");
+    background-image: url("../public/team_bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -115,6 +115,7 @@
     bottom: 127.5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     .team-container {
       width: 1180px;
       margin: 200px auto;
