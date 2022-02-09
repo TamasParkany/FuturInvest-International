@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
   .plans-container {
     width: 1159px;
     display: flex;
@@ -17,12 +18,20 @@
       font-size: 14px;
       line-height: 18px;
       letter-spacing: 0.1em;
+      p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+      }
     }
     &::before {
       content: "";
       border: 1px solid white;
       width: 30px;
-      transform: translateY(10px);
+      transform: translateY(8px);
+      position: absolute;
     }
     h2 {
       font-weight: 500;
@@ -30,18 +39,21 @@
       font-size: 32px;
       line-height: 44px;
       margin-top: 10px;
+      margin-bottom: 0;
     }
     .plans-hr {
+      display: block;
       width: 371px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       margin: 40px 0 64px 0;
     }
-    p {
+    .plans-text {
       width: 640px;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 40px;
+      margin-bottom: 0;
     }
   }
 }
@@ -50,4 +62,6 @@
   position: absolute;
   right: 0px;
   top: -20px;
+  overflow: visible;
+  width: 1069px;
 }

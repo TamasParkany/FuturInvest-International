@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 :root {
@@ -11,7 +12,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -21,9 +22,9 @@ a {
 }
 
 #intro {
-  aspect-ratio: 1440/1074.5;
+  aspect-ratio: 375/684;
   width: 100%;
-  background-image: url("../public/Rectangle1intor-bg.svg");
+  background-image: url("/public/mobile/intro_bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -38,52 +39,63 @@ a {
 }
 
 header {
-  height: 53px;
-  width: 1180px;
-  margin-top: 58px;
+  height: 28px;
+  width: 83%;
+  margin-top: 29px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header .logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 295px;
-          flex: 1 1 295px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 134px;
+          flex: 0 0 134px;
+  height: 28px;
+}
+
+header .logo a {
+  padding: 0px;
+}
+
+header .logo img {
+  width: 100%;
 }
 
 header .top-navigation {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 590px;
-          flex: 0 0 590px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-header .top-navigation a {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 400;
-  font-style: normal;
+  display: none;
 }
 
 header .top-contact {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 295px;
-          flex: 1 1 295px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 134px;
+          flex: 0 0 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .top-contact .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro-info {
-  width: 1180px;
+  width: 83%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +107,7 @@ header .top-contact {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-top: 336px;
+  margin-top: 125px;
 }
 
 .intro-info div {
@@ -110,24 +122,27 @@ header .top-contact {
 }
 
 .intro-info div h2 {
-  margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 500;
+  margin-bottom: 30px;
   font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 .intro-info div .intro-info-text {
-  width: 470px;
-  font-weight: normal;
+  width: 302px;
   font-style: normal;
-  line-height: 32px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .intro-info div .middle-contact {
   width: 211px;
   height: 71px;
-  margin-top: 50px;
+  margin-top: 33px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,32 +167,586 @@ header .top-contact {
   margin-right: 15px;
 }
 
-.intro-rectangle {
-  position: absolute;
-  left: -49px;
-  top: 265px;
-}
-
-.intro-rectangle2 {
-  position: absolute;
-  left: 32px;
-  top: 163px;
-}
-
-.intro-circle {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-
+.intro-rectangle,
+.intro-rectangle2,
+.intro-circle,
 .intro-image {
-  position: absolute;
-  right: 0px;
-  top: 221px;
-  width: 48%;
-  /* 685px original*/
+  display: none;
 }
 
+#innovations {
+  height: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#innovations .innovations-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 301px;
+}
+
+#innovations .innovations-header h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #272d3e;
+}
+
+#innovations .innovations-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 29px;
+}
+
+#innovations .innovations-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 32px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 417px;
+          flex: 0 0 417px;
+}
+
+#innovations .innovations-info div img {
+  width: 100%;
+}
+
+#innovations .innovations-info div h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+
+#innovations .innovations-info div p {
+  width: 301px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(39, 45, 62, 0.8);
+}
+
+#innovations .innovations-info .hydrogen {
+  margin: 62px 0;
+}
+
+#plans {
+  height: 900px;
+  background-color: #00bac7;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: visible;
+}
+
+#plans .plans-container {
+  width: 301px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#plans .plans-container div {
+  margin-left: 0px;
+}
+
+#plans .plans-container div p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+#plans .plans-container::before {
+  content: "";
+  border: 1px solid white;
+  width: 30px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  position: absolute;
+}
+
+#plans .plans-container h2 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 42px;
+  margin-bottom: 34px;
+}
+
+#plans .plans-container .plans-hr {
+  display: none;
+}
+
+#plans .plans-container .plans-text {
+  width: 301px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 121px;
+}
+
+.plans-illustration {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  overflow: visible;
+  width: 658px;
+}
+
+.ambitions-team-container {
+  aspect-ratio: 375/2151;
+  width: 100%;
+  background-image: url("/public/mobile/ambitions_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ambitions-team-container #ambitions {
+  width: 320px;
+  height: 600px;
+  margin: 200px auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ambitions-team-container #ambitions .ambitions-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 575px;
+          flex: 0 0 575px;
+  margin-right: 15px;
+}
+
+.ambitions-team-container #ambitions .ambitions-left img {
+  width: 253px;
+  position: absolute;
+  left: 71px;
+  bottom: -15px;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter {
+  width: 302px;
+  height: 290px;
+  background-color: #00bac7;
+  -webkit-box-shadow: 0px 30px 60px rgba(0, 186, 199, 0.4);
+          box-shadow: 0px 30px 60px rgba(0, 186, 199, 0.4);
+  border-radius: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter .ambitions-counter-number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter .ambitions-counter-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter .projects {
+  padding-right: 0;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter .negotiations {
+  padding: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.ambitions-team-container #ambitions .ambitions-left .ambitions-counter .deals {
+  padding-left: 0;
+}
+
+.ambitions-team-container #ambitions .ambitions-right {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.ambitions-team-container #ambitions .ambitions-right div {
+  margin-left: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #00bac7;
+}
+
+.ambitions-team-container #ambitions .ambitions-right::before {
+  content: "";
+  border: 1px solid #00bac7;
+  width: 30px;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  position: absolute;
+}
+
+.ambitions-team-container #ambitions .ambitions-right h2 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #272d3e;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.ambitions-team-container #ambitions .ambitions-right ul li {
+  background: url("../public/check.svg") no-repeat left top;
+  padding: 0 0 0 50px;
+  list-style: none;
+  margin: 20px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(39, 45, 62, 0.8);
+}
+
+.ambitions-team-container #team {
+  aspect-ratio: 375/1333.85;
+  width: 100%;
+  background-image: url("/public/mobile/team_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  bottom: 127.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 500px;
+}
+
+.ambitions-team-container #team .team-container {
+  width: 1180px;
+  margin: 200px auto;
+}
+
+.ambitions-team-container #team .team-container .team-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ambitions-team-container #team .team-container .team-top .team-headsup {
+  color: #00bac7;
+  background: rgba(198, 244, 248, 0.1);
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+.ambitions-team-container #team .team-container .team-top h2 {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 10px;
+}
+
+.ambitions-team-container #team .team-container .team-top p {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  width: 577px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ambitions-team-container #team .team-container .team-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.ambitions-team-container #team .team-container .team-bottom .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 373px;
+          flex: 0 0 373px;
+  background-color: white;
+  border-radius: 10px;
+  height: 323px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ambitions-team-container #team .team-container .team-bottom .card .card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00bac7;
+  margin-bottom: 10px;
+}
+
+.ambitions-team-container #team .team-container .team-bottom .card .card-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #001533;
+  margin-bottom: 30px;
+}
+
+.ambitions-team-container #team .team-container .team-bottom .card .card-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001533;
+  width: 280px;
+}
+
+.ambitions-team-container #team .team-container .team-bottom .card-middle {
+  margin: 0 30px;
+}
+
+.whitespace {
+  height: 20vh;
+}
+
+footer {
+  aspect-ratio: 375/397.5;
+  width: 100%;
+  background-image: url("/public/mobile/footer_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container {
+  width: 1180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 188px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+footer .footer-container .footer-top .footer-top-info {
+  width: 575px;
+}
+
+footer .footer-container .footer-top .footer-top-info h3 {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+
+footer .footer-container .footer-top .footer-top-info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+footer .footer-container .footer-top .footer-top-contact {
+  width: 575px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer-container .footer-top .footer-top-contact div {
+  color: #f4f7ff;
+  background: #00bac7;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);
+          box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 25px 45px;
+}
+
+footer .footer-container .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 116px;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+/* DESKTOP @MQ */
 @media screen and (min-width: 1180px) {
   #intro {
     aspect-ratio: 1440/1074.5;
@@ -211,9 +780,13 @@ header .top-contact {
             align-items: center;
   }
   header .logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 295px;
-            flex: 1 1 295px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 295px;
+            flex: 0 0 295px;
+    height: 47px;
+  }
+  header .logo a {
+    padding: 0px;
   }
   header .top-navigation {
     -webkit-box-flex: 0;
@@ -231,9 +804,12 @@ header .top-contact {
     font-style: normal;
   }
   header .top-contact {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 295px;
-            flex: 1 1 295px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 295px;
+            flex: 0 0 295px;
+  }
+  header .top-contact .hamburger {
+    display: none;
   }
   .intro-info {
     width: 1180px;
@@ -277,6 +853,7 @@ header .top-contact {
     width: 211px;
     height: 71px;
     margin-top: 50px;
+    margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -300,21 +877,25 @@ header .top-contact {
     margin-right: 15px;
   }
   .intro-rectangle {
+    display: block;
     position: absolute;
     left: -49px;
     top: 265px;
   }
   .intro-rectangle2 {
+    display: block;
     position: absolute;
     left: 32px;
     top: 163px;
   }
   .intro-circle {
+    display: block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
   .intro-image {
+    display: block;
     position: absolute;
     right: 0px;
     top: 221px;
@@ -346,16 +927,22 @@ header .top-contact {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #innovations .innovations-header {
+  #innovations .innovations-header h2 {
     font-weight: 500;
     font-style: normal;
+    font-size: 32px;
     line-height: 44px;
+    text-align: left;
     color: #272d3e;
   }
   #innovations .innovations-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -387,18 +974,23 @@ header .top-contact {
   #innovations .innovations-info div h3 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-weight: 500;
     font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
     color: #000000;
   }
   #innovations .innovations-info div p {
     width: 355px;
-    font-weight: normal;
     font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(39, 45, 62, 0.8);
   }
   #innovations .innovations-info .hydrogen {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px;
   }
   #plans {
     height: 553px;
@@ -414,6 +1006,7 @@ header .top-contact {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: visible;
   }
   #plans .plans-container {
     width: 1159px;
@@ -433,12 +1026,20 @@ header .top-contact {
     line-height: 18px;
     letter-spacing: 0.1em;
   }
+  #plans .plans-container div p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+  }
   #plans .plans-container::before {
     content: "";
     border: 1px solid white;
     width: 30px;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    position: absolute;
   }
   #plans .plans-container h2 {
     font-weight: 500;
@@ -446,23 +1047,28 @@ header .top-contact {
     font-size: 32px;
     line-height: 44px;
     margin-top: 10px;
+    margin-bottom: 0;
   }
   #plans .plans-container .plans-hr {
+    display: block;
     width: 371px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin: 40px 0 64px 0;
   }
-  #plans .plans-container p {
+  #plans .plans-container .plans-text {
     width: 640px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 40px;
+    margin-bottom: 0;
   }
   .plans-illustration {
     position: absolute;
     right: 0px;
     top: -20px;
+    overflow: visible;
+    width: 1069px;
   }
   .ambitions-team-container {
     aspect-ratio: 1440/2217;
@@ -487,6 +1093,10 @@ header .top-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -501,8 +1111,9 @@ header .top-contact {
     margin-right: 15px;
   }
   .ambitions-team-container #ambitions .ambitions-left img {
+    width: 503px;
     position: absolute;
-    left: 71px;
+    left: 60px;
     bottom: -15px;
   }
   .ambitions-team-container #ambitions .ambitions-left .ambitions-counter {
@@ -518,6 +1129,10 @@ header .top-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -1,7 +1,7 @@
 #intro {
-  aspect-ratio: 1440/1074.5;
+  aspect-ratio: 375/684;
   width: 100%;
-  background-image: url("../public/Rectangle1intor-bg.svg");
+  background-image: url("/public/mobile/intro_bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,59 +12,68 @@
 }
 
 header {
-  height: 53px;
-  width: 1180px;
-  margin-top: 58px;
+  height: 28px;
+  width: 83%;
+  margin-top: 29px;
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   .logo {
-    flex: 1 1 295px;
-  }
-  .top-navigation {
-    flex: 0 0 590px;
-    display: flex;
-    justify-content: space-around;
+    flex: 0 0 134px;
+    height: 28px;
     a {
-      color: rgba(255, 255, 255, 0.8);
-      font-weight: 400;
-      font-style: normal;
+      padding: 0px;
+    }
+    img {
+      width: 100%;
     }
   }
+  .top-navigation {
+    display: none;
+  }
   .top-contact {
-    flex: 1 1 295px;
+    flex: 0 0 134px;
+    display: flex;
+    justify-content: flex-end;
+    .hamburger {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 .intro-info {
-  width: 1180px;
+  width: 83%;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: absolute;
-  margin-top: 336px;
+  margin-top: 125px;
   div {
     width: 575px;
     display: flex;
     flex-direction: column;
     h2 {
-      margin-bottom: 20px;
-      font-size: 48px;
-      font-weight: 500;
+      margin-bottom: 30px;
       font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 42px;
     }
     .intro-info-text {
-      width: 470px;
-      font-weight: normal;
+      width: 302px;
       font-style: normal;
-      line-height: 32px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
       color: rgba(255, 255, 255, 0.8);
     }
     .middle-contact {
       width: 211px;
       height: 71px;
-      margin-top: 50px;
+      margin-top: 33px;
+      margin-bottom: 50px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -80,24 +89,9 @@ header {
   }
 }
 
-.intro-rectangle {
-  position: absolute;
-  left: -49px;
-  top: 265px;
-}
-.intro-rectangle2 {
-  position: absolute;
-  left: 32px;
-  top: 163px;
-}
-.intro-circle {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
+.intro-rectangle,
+.intro-rectangle2,
+.intro-circle,
 .intro-image {
-  position: absolute;
-  right: 0px;
-  top: 221px;
-  width: 48%; /* 685px original*/
+  display: none;
 }

@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 :root {
   font-family: "DM Sans", sans-serif;
   user-select: none;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -17,6 +18,17 @@ a {
 }
 
 @import "../src/mobile/intro";
+@import "../src/mobile/innovations";
+@import "../src/mobile/plans";
+@import "../src/mobile/ambitions";
+
+.whitespace {
+  height: 20vh;
+}
+
+@import "../src/mobile/footer";
+
+/* DESKTOP @MQ */
 
 @media screen and (min-width: 1180px) {
   @import "../src/desktop/intro";
