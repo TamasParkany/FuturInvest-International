@@ -53,6 +53,7 @@ html {
 #intro {
   aspect-ratio: 375/684;
   width: 100%;
+  min-height: 684px;
   background-image: url("/public/mobile/intro_bg.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -67,6 +68,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: visible;
+  z-index: 5;
 }
 
 header {
@@ -702,6 +704,7 @@ header .top-contact .hamburger {
 #team {
   aspect-ratio: 375/1333.85;
   width: 100%;
+  max-width: 4260px;
   background-image: url("/public/mobile/team_bg.svg");
   background-repeat: no-repeat;
   background-position: center;
