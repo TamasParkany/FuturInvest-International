@@ -1,0 +1,1 @@
+(()=>{const t=document.querySelectorAll(".form"),e=document.getElementById("contact-form");function n(){e.style.display="flex"}t.forEach((t=>t.addEventListener("click",n))),e.addEventListener("click",(function(t){"contact-form"===t.target.id&&(e.style.display="none")}))})();

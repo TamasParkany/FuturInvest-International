@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./public/fiicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>FuturInvest International</title>
+    <title>FuturInvest International SE</title>
   </head>
   <body>
-    <script defer src="./src/app.js"></script>
+    <script defer src="./dist/main.js"></script>
     <main>
       <section id="intro">
         <header>
@@ -27,7 +34,7 @@
           </nav>
           <div class="top-contact">
             <div class="hamburger">
-              <img src="./public/mobile/menu.svg" alt="site menu">
+              <img src="./public/mobile/menu.svg" alt="site menu" />
             </div>
           </div>
         </header>
@@ -52,151 +59,201 @@
       </section>
       <section id="innovations">
         <div class="innovations-container">
-        <div class="innovations-header">
-          <h2>Our latest front of innovations</h2>
+          <div class="innovations-header">
+            <h2>Our latest front of innovations</h2>
+          </div>
+          <div class="innovations-info">
+            <div class="cargo">
+              <img src="./public/airport.png" alt="cargo airport" />
+              <h3>Cargo airport innovation</h3>
+              <p>
+                We aim to extend and innovate as well as compliment the already
+                existing logistical infrastructure of the Eastern European
+                countries.
+              </p>
+            </div>
+            <div class="hydrogen">
+              <img src="./public/hydrogen.png" alt="hydrogen production" />
+              <h3>Hydrogen production</h3>
+              <p>
+                With an ever increasing carbon footprint and a drive for
+                innovation for the future in the zero-emission sector, hydrogen
+                is becomming the staple of fuels.
+              </p>
+            </div>
+            <div class="research">
+              <img src="./public/research.png" alt="research and development" />
+              <h3>Research and Development</h3>
+              <p>
+                With cooperation between many of our great scientists and
+                collaboration with local schools, we are always striving for new
+                projects and achievements.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="innovations-info">
-          <div class="cargo">
-            <img src="./public/airport.png" alt="cargo airport" />
-            <h3>Cargo airport innovation</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
-              ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin
-              diam lacus, vehicula nec porttitor non
-            </p>
-          </div>
-          <div class='hydrogen'>
-            <img src="./public/hydrogen.png" alt="hydrogen production" />
-            <h3>Hydrogen production</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
-              ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin
-              diam lacus, vehicula nec porttitor non
-            </p>
-          </div>
-          <div class="research">
-            <img src="./public/research.png" alt="research and development" />
-            <h3>Research and Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
-              ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin
-              diam lacus, vehicula nec porttitor non
-            </p>
-          </div>
-        </div>
-      </div>
       </section>
-      <section id="plans">
-        <div class="plans-container">
-          <div>
-            <p>WE HAVE BIG PLANS IN</p>
+      <section data-scroll id="plans">
+        <div data-scroll class="plans-container">
+          <div data-scroll>
+            <p data-scroll>WE HAVE BIG PLANS IN</p>
           </div>
-          <h2>Logistics, road network</br>
-            and infrastructure</h2>
-          <hr class="plans-hr">
-          <p class="plans-text">We are workign on significant investment in the transport of goods on road, rail and river within Central, Eastern Europe and Asia</p>
+          <h2>
+            Logistics, road network<br />
+            and infrastructure
+          </h2>
+          <hr class="plans-hr" />
+          <p data-scroll class="plans-text">
+            We are workign on significant investment in the transport of goods
+            on road, rail and river within Central, Eastern Europe and Asia
+          </p>
         </div>
         <img class="plans-illustration" src="./public/plans_illustration.png" />
       </section>
       <section class="ambitions-team-container">
-      <section id="ambitions">
-        <div class="ambitions-left">
-          <img src="./public/ambitions_image.png">
-          <section class="ambitions-counter">
-            <div class="projects">
-              <p class="ambitions-counter-number">19</p>
-              <p class="ambitions-counter-text">Projects running</p>
-            </div>
-            <div class="negotiations">
-              <p class="ambitions-counter-number">253</p>
-              <p class="ambitions-counter-text">Ongoing negotiations</p>
-            </div>
-            <div class="deals">
-              <p class="ambitions-counter-number">60</p>
-              <p class="ambitions-counter-text">Closed deals</p>
-            </div>
-          </section>
-        </div>
-        <div class="ambitions-right">
-          <div>AND WE DON'T STOP THERE</div>
-          <h2>We have big ambitions</h2>
+        <section id="ambitions">
+          <div class="ambitions-left">
+            <img src="./public/ambitions_image.png" />
+            <section class="ambitions-counter">
+              <div class="projects">
+                <p class="ambitions-counter-number">19</p>
+                <p class="ambitions-counter-text">Projects running</p>
+              </div>
+              <div class="negotiations">
+                <p class="ambitions-counter-number">253</p>
+                <p class="ambitions-counter-text">Ongoing negotiations</p>
+              </div>
+              <div class="deals">
+                <p class="ambitions-counter-number">60</p>
+                <p class="ambitions-counter-text">Closed deals</p>
+              </div>
+            </section>
+          </div>
+          <div class="ambitions-right">
+            <div>AND WE DON'T STOP THERE</div>
+            <h2>We have big ambitions</h2>
             <ul>
-              <li>Introduction of ZERO technology of CO2 emission values for coal-fired power plants</li>
-              <li>Organic food - greenhouse technology of the 21st century, healthy food and vegetables</li>
-              <li>Waste treatment - safe treatment of municipal and hazardous waste - obtaining valuable energy materials, building material - wood plastic, material with excellent insulating properties, ensuring construction in a short time, thanks to the dry method of construction.</li>
-              <li>Innovative method of air conditioning - low-energy operation, energy storage, thermal modules for electricity production</li>
+              <li>
+                Introduction of ZERO technology of CO2 emission values for
+                coal-fired power plants
+              </li>
+              <li>
+                Organic food - greenhouse technology of the 21st century,
+                healthy food and vegetables
+              </li>
+              <li>
+                Waste treatment - safe treatment of municipal and hazardous
+                waste - obtaining valuable energy materials, building material -
+                wood plastic, material with excellent insulating properties,
+                ensuring construction in a short time, thanks to the dry method
+                of construction.
+              </li>
+              <li>
+                Innovative method of air conditioning - low-energy operation,
+                energy storage, thermal modules for electricity production
+              </li>
             </ul>
-        </div>
-      </section>
-      <section id="team">
-        <div class="team-container">
-          <div class="team-top">
-            <div class="team-headsup">OUR TEAM</div>
-            <h2>Meet our leaders</h2>
-            <p>We all have experinece in various fields and want to use it to our mutual benefit</p>
           </div>
-          <div class="team-bottom">
-            <div class="card">
-              <div>
-                <p class="card-title">CEO</p>
-                <p class="card-name">Robert Plank</p>
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin diam lacus, vehicula nec porttitor non</p>
+        </section>
+        <section id="team">
+          <div class="team-container">
+            <div class="team-top">
+              <div class="team-headsup">OUR TEAM</div>
+              <h2>Meet our leaders</h2>
+              <p>
+                We all have experinece in various fields and want to use it to
+                our mutual benefit
+              </p>
+            </div>
+            <div class="team-bottom">
+              <div class="card">
+                <div>
+                  <p class="card-title">CEO</p>
+                  <p class="card-name">Attila Párkány</p>
+                  <p class="card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    augue ante, auctor vitae lorem eget, venenatis ullamcorper
+                    arcu. Proin diam lacus, vehicula nec porttitor non
+                  </p>
+                </div>
+              </div>
+              <div class="card card-middle">
+                <div>
+                  <p class="card-title">VPO</p>
+                  <p class="card-name">Norbert Buchmann</p>
+                  <p class="card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    augue ante, auctor vitae lorem eget, venenatis ullamcorper
+                    arcu. Proin diam lacus, vehicula nec porttitor non
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div>
+                  <p class="card-title">BOS</p>
+                  <p class="card-name">Tamás Párkány</p>
+                  <p class="card-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    augue ante, auctor vitae lorem eget, venenatis ullamcorper
+                    arcu. Proin diam lacus, vehicula nec porttitor non
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="card card-middle">
-              <div>
-                <p class="card-title">CTO</p>
-                <p class="card-name">Ivana Plank</p>
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin diam lacus, vehicula nec porttitor non</p>
-            </div>
-            </div>
-            <div class="card">
-              <div>
-                <p class="card-title">CFO</p>
-                <p class="card-name">Jonas Plank</p>
-                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue ante, auctor vitae lorem eget, venenatis ullamcorper arcu. Proin diam lacus, vehicula nec porttitor non</p>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </section>
       <div class="whitespace"></div>
       <footer>
         <div class="footer-container">
-        <div class="footer-top">
-          <div class='footer-top-info'>
-            <h3>Want to get in touch?</h3>
-            <p>There is nothing easier. Write us or call us on +421 555 555</p>
+          <div class="footer-top">
+            <div class="footer-top-info">
+              <h3>Want to get in touch?</h3>
+              <p>
+                There is nothing easier. Write us or call us on +421 917 229 451
+              </p>
+            </div>
+            <div class="footer-top-contact">
+              <div class="form">Contact us</div>
+            </div>
           </div>
-          <div class='footer-top-contact'>
-            <div class="form">Contact us</div>
+          <div class="footer-bottom">
+            FuturInvest International SE &copy; 2022
           </div>
         </div>
-        <div class="footer-bottom">FuturInvest International SE &copy; 2022</div>
-      </div>
       </footer>
     </main>
     <section id="contact-form">
-      <form action="https://formsubmit.co/tamas.parkany@futurinvest.email" method="POST">
+      <form
+        action="https://formsubmit.co/tamas.parkany@futurinvest.email"
+        method="POST"
+      >
         <div class="form-header">
           <p>Write us a message</p>
         </div>
-          <div class="form-inputs">
-            <div>
-              <label for="email">E-mail</label><br>
-              <input type="email" id='email' name="email" required>
-            </div>
-            <div>
-              <label for="text">Message</label><br>
-              <textarea name="text" id="text" cols="30" rows="10"></textarea>
-            </div>
+        <div class="form-inputs">
+          <div>
+            <label for="email">E-mail</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="text">Message</label><br />
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+          </div>
           <button type="submit">Send message</button>
-          <input type="hidden" name="_subject" value="New message received through website!">
-          <input type="hidden" name="_next" value="https://futurinvest.international/index.html">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="box">
-       </div>
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message received through website!"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://futurinvest.international/index.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+        </div>
       </form>
     </section>
   </body>

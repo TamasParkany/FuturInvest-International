@@ -1,5 +1,3 @@
-history.scrollRestoration = "manual";
-
 const formButtons = document.querySelectorAll(".form");
 const contactForm = document.getElementById("contact-form");
 
