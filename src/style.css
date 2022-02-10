@@ -214,6 +214,7 @@ header .top-contact .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 #innovations .innovations-container {
@@ -679,6 +680,7 @@ header .top-contact .hamburger {
 
 .whitespace {
   height: 175vh;
+  position: relative;
 }
 
 footer {
@@ -726,13 +728,13 @@ footer .footer-container .footer-top {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 188px;
   border-bottom: none;
   overflow: visible;
 }
 
 footer .footer-container .footer-top .footer-top-info {
   width: 320px;
+  text-align: center;
 }
 
 footer .footer-container .footer-top .footer-top-info h3 {
@@ -764,6 +766,8 @@ footer .footer-container .footer-top .footer-top-contact {
       -ms-flex-pack: end;
           justify-content: flex-end;
   overflow: visible;
+  margin-top: 26px;
+  margin-bottom: 58px;
 }
 
 footer .footer-container .footer-top .footer-top-contact div {
@@ -787,7 +791,7 @@ footer .footer-container .footer-bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 116px;
+  height: 16px;
   color: rgba(255, 255, 255, 0.4);
   font-style: normal;
   font-weight: bold;
@@ -1667,6 +1671,7 @@ footer .footer-container .footer-bottom {
   }
   footer .footer-container .footer-top .footer-top-info {
     width: 575px;
+    text-align: left;
   }
   footer .footer-container .footer-top .footer-top-info h3 {
     color: white;
