@@ -11,7 +11,7 @@ function showForm() {
 }
 
 function hideForm(e) {
-  if (e.target.id === "contact-form" || e.currentTarget.id === "contact-form") {
+  if (e.target.id === "contact-form" || e.target.classList.contains("close")) {
     contactForm.style.display = "none";
   } else {
     return;
