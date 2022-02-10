@@ -13,7 +13,6 @@
   #ambitions {
     width: 320px;
     margin: 200px auto;
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,100 +112,196 @@
       }
     }
   }
-  #team {
-    aspect-ratio: 375/1333.85;
-    width: 100%;
-    background-image: url("/public/mobile/team_bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    left: 0px;
-    bottom: -900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .team-container {
-      width: 1180px;
-      margin: 200px auto;
-      .team-top {
+}
+
+#team {
+  aspect-ratio: 375/1333.85;
+  width: 100%;
+  background-image: url("/public/mobile/team_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  bottom: -900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .team-container {
+    margin: 200px auto;
+    .team-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .team-headsup {
+        color: #00bac7;
+        background: rgba(198, 244, 248, 0.1);
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+      }
+      h2 {
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 10px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        width: 256px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+    .team-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 35px;
+      .card {
+        flex: 0 0 261px;
+        background-color: white;
+        border-radius: 10px;
+        width: 301px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .team-headsup {
-          color: #00bac7;
-          background: rgba(198, 244, 248, 0.1);
-          border-radius: 100px;
-          padding: 10px 20px;
+        .card-title {
           font-style: normal;
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 18px;
-          letter-spacing: 0.1em;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          color: #00bac7;
+          margin-bottom: 10px;
         }
-        h2 {
-          color: white;
+        .card-name {
           font-style: normal;
           font-weight: 500;
           font-size: 32px;
-          line-height: 44px;
-          margin-top: 10px;
+          line-height: 42px;
+          color: #001533;
+          margin-bottom: 17px;
         }
-        p {
-          color: rgba(255, 255, 255, 0.8);
+        .card-info {
+          font-family: "Source Sans Pro", sans-serif;
           font-style: normal;
           font-weight: normal;
-          font-size: 18px;
-          line-height: 32px;
-          width: 256px;
-          text-align: center;
-          margin-top: 20px;
+          font-size: 16px;
+          line-height: 20px;
+          color: #001533;
+          width: 242px;
         }
       }
-      .team-bottom {
+      .card-middle {
+        margin: 42px 0;
+      }
+    }
+  }
+}
+
+#team {
+  aspect-ratio: 375/1333.85;
+  width: 100%;
+  background-image: url("/public/mobile/team_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 5060px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .team-container {
+    margin: 200px auto;
+    .team-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .team-headsup {
+        color: #00bac7;
+        background: rgba(198, 244, 248, 0.1);
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+      }
+      h2 {
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 10px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        width: 256px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+    .team-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 35px;
+      .card {
+        flex: 0 0 261px;
+        background-color: white;
+        border-radius: 10px;
+        width: 301px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 35px;
-        .card {
-          flex: 0 0 261px;
-          background-color: white;
-          border-radius: 10px;
-          width: 301px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .card-title {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 21px;
-            color: #00bac7;
-            margin-bottom: 10px;
-          }
-          .card-name {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 32px;
-            line-height: 42px;
-            color: #001533;
-            margin-bottom: 17px;
-          }
-          .card-info {
-            font-family: "Source Sans Pro", sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 20px;
-            color: #001533;
-            width: 242px;
-          }
+        .card-title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          color: #00bac7;
+          margin-bottom: 10px;
         }
-        .card-middle {
-          margin: 42px 0;
+        .card-name {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 42px;
+          color: #001533;
+          margin-bottom: 17px;
         }
+        .card-info {
+          font-family: "Source Sans Pro", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: #001533;
+          width: 242px;
+        }
+      }
+      .card-middle {
+        margin: 42px 0;
       }
     }
   }
