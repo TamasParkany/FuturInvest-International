@@ -704,13 +704,13 @@ header .top-contact .hamburger {
 #team {
   aspect-ratio: 375/1333.85;
   width: 100%;
-  max-width: 4260px;
+  max-width: 500px;
   background-image: url("/public/mobile/team_bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 5060px;
+  top: 4260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
