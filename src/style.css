@@ -136,10 +136,74 @@ header .top-contact .hamburger {
 
 .header-bg {
   position: fixed;
+  height: 80px;
   top: 0;
   z-index: 9;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 80px;
+  display: none;
+}
+
+.mobile-nav div {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-nav a {
+  color: white;
+  text-align: center;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  opacity: 0;
+}
+
+.mobile-nav-active {
+  display: block;
+}
+
+.mobile-nav-active a {
+  opacity: 1;
+}
+
+.circle {
+  position: fixed;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f364b), color-stop(686%, rgba(38, 43, 61, 0.5)));
+  background: linear-gradient(180deg, #2f364b 0%, rgba(38, 43, 61, 0.5) 686%);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  opacity: 0;
+  display: none;
+}
+
+.circle-active {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(4);
+          transform: scale(4);
 }
 
 .intro-info {
@@ -840,6 +904,8 @@ footer .footer-container .footer-bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #contact-form form {
@@ -1020,6 +1086,7 @@ footer .footer-container .footer-bottom {
     overflow: visible;
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
+    z-index: 999;
   }
   header .logo {
     -webkit-box-flex: 0;
@@ -1103,7 +1170,8 @@ footer .footer-container .footer-bottom {
   .header-bg {
     position: fixed;
     top: 0;
-    z-index: 9;
+    height: auto;
+    z-index: 999;
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
   }
@@ -1786,6 +1854,8 @@ footer .footer-container .footer-bottom {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #contact-form form {
     width: 1180px;

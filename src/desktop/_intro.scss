@@ -22,6 +22,7 @@ header {
   align-items: center;
   overflow: visible;
   transition: all 1.5s;
+  z-index: 999;
   .logo {
     flex: 0 0 295px;
     height: 47px;
@@ -83,7 +84,8 @@ header {
 .header-bg {
   position: fixed;
   top: 0;
-  z-index: 9;
+  height: auto;
+  z-index: 999;
   transition: all 1.5s;
 }
 
