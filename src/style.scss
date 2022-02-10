@@ -17,20 +17,6 @@ a {
   z-index: 10;
 }
 
-/* SCROLLBAR */
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: rgba(244, 247, 255, 0.5);
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(39, 45, 62, 0.8);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #272d3e;
-}
-
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
@@ -54,11 +40,6 @@ main {
 /* DESKTOP @MQ */
 
 @media screen and (min-width: 1180px) {
-  @import "../src/desktop/intro";
-  @import "../src/desktop/innovations";
-  @import "../src/desktop/plans";
-  @import "../src/desktop/ambitions";
-
   main {
     position: relative;
     width: 100%;
@@ -66,6 +47,23 @@ main {
     overflow: hidden;
   }
 
+  /* SCROLLBAR */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(244, 247, 255, 0.5);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(39, 45, 62, 0.8);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #272d3e;
+  }
+  @import "../src/desktop/intro";
+  @import "../src/desktop/innovations";
+  @import "../src/desktop/plans";
+  @import "../src/desktop/ambitions";
   @import "../src/desktop/footer";
   @import "../src/desktop/contact";
 }

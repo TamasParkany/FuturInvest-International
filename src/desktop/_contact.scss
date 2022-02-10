@@ -11,13 +11,14 @@
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  form {
+
+  .contact-form-container {
     width: 1180px;
     height: 720px;
     background-color: white;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -32,6 +33,44 @@
         fill: #00bac7;
       }
     }
+    .contact-list {
+      flex: 0 0 575px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      margin-top: 0;
+      margin-left: 0;
+      div {
+        display: flex;
+        flex-direction: column;
+        color: #272d3e;
+        h4 {
+          span {
+            color: #00bac7;
+            margin-left: 20px;
+          }
+        }
+        a {
+          padding: 0;
+          color: #272d3e;
+        }
+      }
+    }
+  }
+
+  form {
+    width: 1180px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #272d3e;
     .form-header {
       font-size: 42px;
       font-weight: 800;
