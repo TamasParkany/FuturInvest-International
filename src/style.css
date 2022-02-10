@@ -15,6 +15,12 @@
   overflow-y: auto;
 }
 
+main {
+  position: relative;
+  width: 100%;
+  height: 6794px;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -52,7 +58,8 @@ html {
   background-position: center;
   background-size: cover;
   color: white;
-  position: relative;
+  position: absolute;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +212,7 @@ header .top-contact .hamburger {
 
 #innovations {
   height: 1600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +222,8 @@ header .top-contact .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
+  top: 684px;
 }
 
 #innovations .innovations-container {
@@ -305,9 +314,11 @@ header .top-contact .hamburger {
 
 #plans {
   height: 900px;
+  width: 100%;
   background-color: #00bac7;
   color: white;
-  position: relative;
+  position: absolute;
+  top: 2285px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,7 +400,8 @@ header .top-contact .hamburger {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  top: 3185px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,11 +690,6 @@ header .top-contact .hamburger {
   margin: 42px 0;
 }
 
-.whitespace {
-  height: 175vh;
-  position: relative;
-}
-
 footer {
   aspect-ratio: 375/397.5;
   width: 100%;
@@ -699,6 +706,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 6396px;
 }
 
 footer .footer-container {
