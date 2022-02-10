@@ -15,6 +15,7 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 20px;
+  z-index: 10;
 }
 
 /* SCROLLBAR */
@@ -46,6 +47,7 @@ html {
 }
 
 @import "../src/mobile/footer";
+@import "../src/mobile/contact";
 
 /* DESKTOP @MQ */
 

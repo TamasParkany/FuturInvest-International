@@ -1,3 +1,5 @@
+const header = document.getElementsByTagName("header")[0];
+const headerBg = document.getElementsByClassName("header-bg")[0];
 const formButtons = document.querySelectorAll(".form");
 const contactForm = document.getElementById("contact-form");
 
@@ -9,9 +11,23 @@ function showForm() {
 }
 
 function hideForm(e) {
-  if (e.target.id === "contact-form") {
+  if (e.target.id === "contact-form" || e.currentTarget.id === "contact-form") {
     contactForm.style.display = "none";
   } else {
     return;
   }
 }
+
+//hide navbar on scroll
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    header.style.top = "0";
+    headerBg.style.top = "0";
+  } else {
+    header.style.top = "-150px";
+    headerBg.style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+};

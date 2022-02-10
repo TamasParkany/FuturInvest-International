@@ -36,6 +36,9 @@ header {
     flex: 0 0 134px;
     display: flex;
     justify-content: flex-end;
+    .top-form {
+      display: none;
+    }
     .hamburger {
       display: flex;
       align-items: center;
