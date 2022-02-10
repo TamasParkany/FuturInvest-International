@@ -1,6 +1,7 @@
 footer {
   aspect-ratio: 1440/363;
   width: 100%;
+  min-height: 0;
   background-image: url("../public/footer_bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -8,6 +9,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: static;
   .footer-container {
     width: 1180px;
     display: flex;
