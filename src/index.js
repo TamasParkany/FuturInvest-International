@@ -36,17 +36,59 @@ window.onscroll = function () {
 };
 
 // mobile menu
+let transitionState = "start";
+
 document
   .getElementsByClassName("hamburger")[0]
   .addEventListener("click", toggleMMenu);
-document
-  .querySelectorAll(".mobile-nav div a")
-  .forEach((a) => a.addEventListener("click", toggleMMenu));
+
+let menuLinks = document.querySelectorAll(".mobile-nav div a");
+
+menuLinks.forEach((a) => a.addEventListener("click", toggleMMenu));
 
 function toggleMMenu() {
-  let circle = document.getElementsByClassName("circle")[0];
+  let header = document.getElementsByClassName("header-bg")[0];
   let menu = document.getElementsByClassName("mobile-nav")[0];
 
-  circle.classList.toggle("circle-active");
-  menu.classList.toggle("mobile-nav-active");
+  if (transitionState === "start") {
+    menuLinks.forEach((a) => {
+      switch (a.classList[0]) {
+        case "one-end":
+          a.classList.replace("one-end", "one");
+          break;
+        case "two-end":
+          a.classList.replace("two-end", "two");
+          break;
+        case "three-end":
+          a.classList.replace("three-end", "three");
+          break;
+        case "four-end":
+          a.classList.replace("four-end", "four");
+          break;
+      }
+    });
+    header.classList.toggle("test");
+    menu.classList.toggle("mobile-nav-active");
+    transitionState = "end";
+  } else {
+    menuLinks.forEach((a) => {
+      switch (a.classList[0]) {
+        case "one":
+          a.classList.replace("one", "one-end");
+          break;
+        case "two":
+          a.classList.replace("two", "two-end");
+          break;
+        case "three":
+          a.classList.replace("three", "three-end");
+          break;
+        case "four":
+          a.classList.replace("four", "four-end");
+          break;
+      }
+    });
+    header.classList.toggle("test");
+    menu.classList.toggle("mobile-nav-active");
+    transitionState = "start";
+  }
 }
