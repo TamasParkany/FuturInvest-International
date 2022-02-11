@@ -98,7 +98,85 @@ function toggleMMenu() {
 
 //ANIMATION OBSERVER
 document.documentElement.style.setProperty("--animate-duration", "2s");
+document.documentElement.style.setProperty("--animate-delay", "0.5s");
 
+//INTRO
+const introObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const header = entry.target.querySelector(".intro-info div h2");
+    const text = entry.target.querySelector(".intro-info div p");
+    const button = entry.target.querySelector(".intro-info div div");
+
+    if (entry.isIntersecting) {
+      header.classList.add("animate__animated", "animate__fadeInLeft");
+      text.classList.add(
+        "animate__animated",
+        "animate__delay-1s",
+        "animate__fadeInLeft"
+      );
+      button.classList.add(
+        "animate__animated",
+        "animate__delay-2s",
+        "animate__fadeInLeft"
+      );
+      return;
+    }
+    // stop intersecting
+  });
+});
+
+introObserver.observe(document.querySelector("#intro"));
+
+//INNOVATIONS
+const innovationsObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const header = entry.target.getElementsByClassName("innovations-header")[0];
+    const info = entry.target.querySelectorAll(".innovations-info div");
+
+    if (entry.isIntersecting) {
+      header.classList.add("animate__animated", "animate__fadeInUp");
+      info[0].classList.add(
+        "animate__animated",
+        "animate__delay-1s",
+        "animate__fadeInUp"
+      );
+      info[1].classList.add(
+        "animate__animated",
+        "animate__delay-2s",
+        "animate__fadeInUp"
+      );
+      info[2].classList.add(
+        "animate__animated",
+        "animate__delay-3s",
+        "animate__fadeInUp"
+      );
+      return;
+    }
+    // stop intersecting
+  });
+});
+
+innovationsObserver.observe(document.querySelector(".innovations-container"));
+
+//PLANS
+const plansObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const container = entry.target.getElementsByClassName("plans-container")[0];
+    const illustration =
+      entry.target.getElementsByClassName("plans-illustration")[0];
+
+    if (entry.isIntersecting) {
+      container.classList.add("animate__fadeInLeft");
+      illustration.classList.add("animate__fadeInRight");
+      return;
+    }
+    // stop intersecting
+  });
+});
+
+plansObserver.observe(document.querySelector("#plans"));
+
+//AMBITIONS
 const ambitionsCounterObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const projects = entry.target.querySelector(
@@ -137,6 +215,21 @@ const ambitionsCounterObserver = new IntersectionObserver((entries) => {
 
 ambitionsCounterObserver.observe(document.querySelector(".ambitions-counter"));
 
+const ambitionsObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const checkmarks = entry.target.querySelectorAll("ul li");
+
+    if (entry.isIntersecting) {
+      checkmarks.forEach((mark) => mark.classList.add("animate__fadeInLeft"));
+      return;
+    }
+    // stop intersecting
+  });
+});
+
+ambitionsObserver.observe(document.querySelector(".ambitions-right"));
+
+//TEAM
 const teamBottomObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const people = entry.target.getElementsByClassName("card");
