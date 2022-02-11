@@ -25,10 +25,11 @@ html {
 main {
   position: relative;
   width: 100%;
-  height: 6794px;
+  height: 7294px;
   overflow: hidden;
 }
 
+@import "../src/mobile/hamburger";
 @import "../src/mobile/intro";
 @import "../src/mobile/innovations";
 @import "../src/mobile/plans";

@@ -29,8 +29,127 @@ html {
 main {
   position: relative;
   width: 100%;
-  height: 6794px;
+  height: 7294px;
   overflow: hidden;
+}
+
+.btn11 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: scale(0.6) translate(-90%, -90%);
+          transform: scale(0.6) translate(-90%, -90%);
+}
+
+.btn11 .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 30px;
+  background-color: white;
+}
+
+.btn11 .icon-left:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: white;
+  content: "";
+  top: -10px;
+}
+
+.btn11 .icon-left:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: white;
+  content: "";
+  top: 10px;
+}
+
+.btn11 .icon-left:hover {
+  cursor: pointer;
+}
+
+.btn11 .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 30px;
+  background-color: white;
+  left: 15px;
+}
+
+.btn11 .icon-right:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: white;
+  content: "";
+  top: -10px;
+}
+
+.btn11 .icon-right:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: white;
+  content: "";
+  top: 10px;
+}
+
+.btn11.open .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+
+.btn11.open .icon-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+
+.btn11.open .icon-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+
+.btn11.open .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+
+.btn11.open .icon-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+
+.btn11.open .icon-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+
+.btn11:hover {
+  cursor: pointer;
 }
 
 #intro {
@@ -88,6 +207,11 @@ header .logo img {
   width: 100%;
 }
 
+header .logo:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 header .top-navigation {
   display: none;
 }
@@ -115,6 +239,7 @@ header .top-contact .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header-bg {
@@ -161,6 +286,12 @@ header .top-contact .hamburger {
   color: white;
   text-align: center;
   opacity: 0;
+}
+
+.mobile-nav a:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  color: #00bac7;
 }
 
 .mobile-nav-active {
@@ -211,28 +342,6 @@ header .top-contact .hamburger {
   transition: all 0.3s;
 }
 
-.circle {
-  position: fixed;
-  top: -80px;
-  right: -80px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f364b), color-stop(686%, rgba(38, 43, 61, 0.8)));
-  background: linear-gradient(180deg, #2f364b 0%, rgba(38, 43, 61, 0.8) 686%);
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  opacity: 0;
-  display: none;
-}
-
-.circle-active {
-  display: block;
-  opacity: 1;
-  -webkit-transform: scale(4);
-          transform: scale(4);
-}
-
 .intro-info {
   width: 83%;
   display: -webkit-box;
@@ -245,7 +354,7 @@ header .top-contact .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 125px;
+  margin-top: 100px;
   overflow: visible;
 }
 
@@ -984,7 +1093,7 @@ footer .footer-container .footer-bottom {
   line-height: 16px;
   letter-spacing: 0.1em;
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 #contact-form .contact-form-container .contact-list div {
@@ -1284,6 +1393,9 @@ footer .footer-container .footer-bottom {
     z-index: 999;
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
+  }
+  .mobile-nav {
+    display: none;
   }
   .intro-info {
     width: 1180px;

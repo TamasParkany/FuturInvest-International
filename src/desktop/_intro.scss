@@ -89,6 +89,10 @@ header {
   transition: all 1.5s;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .intro-info {
   width: 1180px;
   display: flex;
