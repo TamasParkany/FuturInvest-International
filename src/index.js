@@ -3,6 +3,13 @@ const headerBg = document.getElementsByClassName("header-bg")[0];
 const formButtons = document.querySelectorAll(".form");
 const contactForm = document.getElementById("contact-form");
 
+//mobile menu visibility fix
+const mobileNav = document.getElementsByClassName("mobile-nav")[0];
+window.addEventListener(
+  "DOMContentLoaded",
+  () => (mobileNav.style.display = "flex")
+);
+
 formButtons.forEach((button) => button.addEventListener("click", showForm));
 contactForm.addEventListener("click", hideForm);
 
